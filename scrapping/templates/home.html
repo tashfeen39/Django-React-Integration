@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Scraper</title>
+
+</head>
+
+<body>
+
+    <form method="post" action="{% url 'scrape' %}">
+        {% csrf_token %}
+        <input type="text" id="url1" name="url1" value="https://www.zameen.com/Homes/Multan-15-1.html" size="50"> 
+        <br><br>
+        <input type="text" id="url2" name="url2" value="https://www.zameen.com/Homes/Lahore-1-1.html" size="50">
+        <br><br>
+
+        <button type="submit">Get Comparison</button>
+    </form>
+
+    <br>
+
+</body>
+
+</html>
